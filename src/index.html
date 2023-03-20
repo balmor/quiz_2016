@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content=" Damian Duda " />
+    <title>QUIZ JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="logo block block--logo">Quiz <span>Javascript</span></h1>
+        <div class="effect"></div>
+      </div>
+
+      <div class="content">
+
+        <div id="start">
+          <button id="start-quiz" type="submit"><span></span>READY</button>
+        </div>
+
+        <div id="quiz" class="hide">
+          <ul id="statistic">
+            <li id="score">score <span>0</span></li>
+            <li id="number">question <span>1</span></li>
+            <li id="incorrect">incorrect <span>0</span></li>
+          </ul>
+
+          <div class="current-question" data-question-number>
+            <p id="question" class="block block--general"></p>
+          </div>
+
+          <ul id="answers" class="block block--general dummy">
+          </ul>
+
+          <div class="button-area">
+            <button id="submit" name="submit" data-choice-number="" type="submit">Submit <i class="fa-solid fa-chevron-right"></i></button>
+            <button id="next" name="next" data-choice-number="" type="submit">Next question <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+/* Responsive styles */
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    &:after {
+      border-width: 0 0 100vh 50vh;
+    }
+    &:before {
+      border-width: 100vh 0 0 50vh;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    &:after {
+      border-width: 0 0 100vh 30vh;
+    }
+    &:before {
+      border-width: 100vh 0 0 30vh;
+    }
+  }
+}
