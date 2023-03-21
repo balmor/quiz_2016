@@ -170,7 +170,6 @@ var QuizUI = {
 var question = [];
 
 (function getQuestionJson() {
-  console.log('jsonQuestions', jsonQuestions);
   processMyJson(jsonQuestions);
 })();
 
