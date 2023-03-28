@@ -1,99 +1,73 @@
-{
-	"questions": [{
-		"quest": "Which of the following JavaScript commands tells a browser to open a dialog box with a message?",
-		"choices": ["dialog()", "alert()", "console.log()", "document.write()"],
-		"correct": "alert()"
-	}, {
-		"quest": "Finish the code below to load the JavaScript file app.js: <script ________ ></script>",
-		"choices": ["link='app.js'", "ref='app.js'", "src='app.js'", "href='app.js'"],
-		"correct": "src='app.js'"
-	}, {
-		"quest": "The process of combining one or more strings is called:",
-		"choices": ["combination", "variable addition", "concatenation", "stringification"],
-		"correct": "concatenation"
-  }, {
-		"quest": "Which of the following tells a browser to open a dialog box for collecting a response with the message 'Type your name' in it?",
-		"choices": ["alert('Type your name');", "prompt('Type your name');", "log('Type your name');", "write('Type your name');"],
-		"correct": "prompt('Type your name');"
-  }, {
-		"quest": "Which of the following JavaScript methods takes a string and tries to convert it to an integer (a whole number)?",
-		"choices": ["Math.round()", "parseFloat()", "Math.ceil()", "parseInt()"],
-		"correct": "parseInt()"
-  }, {
-    "quest": "How do you round the number 7.25, to the nearest integer?",
-		"choices": ["round(7.25)", "Math.round(7.25)", "rnd(7.25)", "Math.rnd(7.25)"],
-		"correct": "Math.round(7.25)"
-  }, {
-		"quest": "How would you 'call a function' named sayHello?",
-		"choices": ["Type function, a set of parentheses and the name of the function: function(sayHello);", "Type the name of the function followed by parentheses: sayHello();", "Type <code>run</code> followed by the function name: run sayHello();", "Type the name of the function followed by a semicolon: sayHello;"],
-		"correct": "Type the name of the function followed by parentheses: sayHello();"
-  }, {
-		"quest": "What does the JavaScript return statement do?",
-		"choices": ["'return' sends a value back to the program and continues running the rest of the code in the function.", "'return' stops the program", "'return' exits a function and sends a value back to the spot in the program where the function was called", "'return' provides a way to send information to a function"],
-		"correct": "'return' exits a function and sends a value back to the spot in the program where the function was called"
-  }, {
-		"quest": "What is 'scope' in JavaScript?",
-		"choices": ["Scope is the way you give and get information from functions", "Scope is the list of functions in the currently running program", "Scope is used to determine when a function returns a value", "Scope is the context in which a variable can be accessed, such as within a function, or within the global scope of the entire program"],
-		"correct": "Scope is the context in which a variable can be accessed, such as within a function, or within the global scope of the entire program"
-  }, {
-		"quest": "When you call a function, the pieces of information being passed to that function are called:",
-		"choices": ["Parameters", "Variables", "Arguments", "Strings"],
-		"correct": "Arguments"
-  }, {
-    "quest": "Which event occurs when the user clicks on an HTML element?",
-		"choices": ["onchange", "onclick", "onmouseclick", "onmouseover"],
-		"correct": "onclick"
-  }, {
-		"quest": "Which of the following statements will make the JavaScript interpreter exit a loop even when the loop condition is still true?",
-		"choices": ["break;", "exit;", "return;", "stop;"],
-		"correct": "break;"
-  }, {
-		"quest": "Which array method returns the first item from an array and removes it from the array?",
-		"choices": ["shift()", "unshift()", "push()", "pop()"],
-		"correct": "shift()"
-  }, {
-		"quest": "Which array method adds an item to the end of an array?",
-		"choices": ["shift()", "unshift()", "push()", "pop()"],
-		"correct": "push()"
-  }, {
-		"quest": "Which array method combines one array with another to create a new array?",
-		"choices": ["push()", "concat()", "shift()", "replace()"],
-		"correct": "concat()"
-  }, {
-		"quest": "What does JSON stand for?",
-		"choices": ["JavaScript Object Notation", "JavaScript Objective Notation", "JavaScript Objects Notions", "JavaScript Syntax Object Notation"],
-		"correct": "JavaScript Object Notation"
-  }, {
-		"quest": "The indexOf( ) method can search an array to see if there is a matching item in the array. For example, students.indexOf('Kari') looks to see if the string 'Kari' is an item in the students array. What value does the JavaScript interpreter return if it CAN'T find a matching item in the array?",
-		"choices": ["null", "undefined", "-1", "'Not found'", "0"],
-		"correct": "-1"
-  }, {
-		"quest": "Which of the following JavaScript keywords is NOT used to create a loop?",
-		"choices": ["break", "do", "while", "for"],
-		"correct": "break"
-  }, {
-		"quest": "If you have a cat object and it has a method of meow() how would I call it?",
-		"choices": ["meow.cat", "meow().cat", "cat.meow", "cat.meow()"],
-		"correct": "cat.meow()"
-  }, {
-		"quest": "If you have a cat object and it has a property of age how would I access it?",
-		"choices": ["cat.age", "age.cat", "age", "cat.age()"],
-		"correct": "cat.age"
-  }, {
-		"quest": "If I had the key of 'full name' how would I access the value of that property on an object?",
-		"choices": ["preson.fullName;", "person['full name'];", "person.'full name';", "person('full name');"],
-		"correct": "person['full name'];"
-  }, {
-		"quest": "The technique used in JavaScript to share functionality between similar types of objects is known as:",
-		"choices": ["Classical inheritance", "Objectionable inheritance", "Proto inheritance", "Prototype inheritance"],
-		"correct": "Prototype inheritance"
-  }, {
-    "quest": "What is NaN (not a number) type?",
-    "choices": ["object", "number", "array", "string"],
-    "correct": "number"
-  }, {
-    "quest": "Which built-in method combines the text of two strings and returns a new string?",
-    "choices": ["join()", "indexOf()", "replace()", "concat()"],
-    "correct": "concat()"
-  }]
-}
+[{
+	"question": "Which of the following JavaScript commands tells a browser to open a dialog box with a message?",
+	"choices": ["alert()", "dialog()", "console.log()", "document.write()"]
+}, {
+	"question": "Finish the code below to load the JavaScript file app.js: <script ________ ></script>",
+	"choices": ["src='app.js'", "link='app.js'", "ref='app.js'", "href='app.js'"]
+}, {
+	"question": "The process of combining one or more strings is called:",
+	"choices": ["concatenation", "combination", "variable addition", "stringification"]
+}, {
+	"question": "Which of the following tells a browser to open a dialog box for collecting a response with the message 'Type your name' in it?",
+	"choices": ["prompt('Type your name');", "alert('Type your name');", "log('Type your name');", "write('Type your name');"]
+}, {
+	"question": "Which of the following JavaScript methods takes a string and tries to convert it to an integer (a whole number)?",
+	"choices": ["parseInt()", "Math.round()", "parseFloat()", "Math.ceil()"]
+}, {
+	"question": "How do you round the number 7.25, to the nearest integer?",
+	"choices": ["Math.round(7.25)", "round(7.25)", "rnd(7.25)", "Math.rnd(7.25)"]
+}, {
+	"question": "How would you 'call a function' named sayHello?",
+	"choices": ["Type the name of the function followed by parentheses: sayHello();", "Type function, a set of parentheses and the name of the function: function(sayHello);", "Type <code>run</code> followed by the function name: run sayHello();", "Type the name of the function followed by a semicolon: sayHello;"]
+}, {
+	"question": "What does the JavaScript return statement do?",
+	"choices": ["'return' exits a function and sends a value back to the spot in the program where the function was called", "'return' sends a value back to the program and continues running the rest of the code in the function.", "'return' stops the program", "'return' provides a way to send information to a function"]
+}, {
+	"question": "What is 'scope' in JavaScript?",
+	"choices": ["Scope is the context in which a variable can be accessed, such as within a function, or within the global scope of the entire program", "Scope is the way you give and get information from functions", "Scope is the list of functions in the currently running program", "Scope is used to determine when a function returns a value"]
+}, {
+	"question": "When you call a function, the pieces of information being passed to that function are called:",
+	"choices": ["Arguments", "Parameters", "Variables", "Strings"]
+}, {
+	"question": "Which event occurs when the user clicks on an HTML element?",
+	"choices": ["onclick", "onchange", "onmouseclick", "onmouseover"]
+}, {
+	"question": "Which of the following statements will make the JavaScript interpreter exit a loop even when the loop condition is still true?",
+	"choices": ["break;", "exit;", "return;", "stop;"]
+}, {
+	"question": "Which array method returns the first item from an array and removes it from the array?",
+	"choices": ["shift()", "unshift()", "push()", "pop()"]
+}, {
+	"question": "Which array method adds an item to the end of an array?",
+	"choices": ["push()", "shift()", "unshift()", "pop()"]
+}, {
+	"question": "Which array method combines one array with another to create a new array?",
+	"choices": ["concat()", "push()", "shift()", "replace()"]
+}, {
+	"question": "What does JSON stand for?",
+	"choices": ["JavaScript Object Notation", "JavaScript Objective Notation", "JavaScript Objects Notions", "JavaScript Syntax Object Notation"]
+}, {
+	"question": "The indexOf( ) method can search an array to see if there is a matching item in the array. For example, students.indexOf('Kari') looks to see if the string 'Kari' is an item in the students array. What value does the JavaScript interpreter return if it CAN'T find a matching item in the array?",
+	"choices": ["-1", "null", "undefined", "'Not found'", "0"]
+}, {
+	"question": "Which of the following JavaScript keywords is NOT used to create a loop?",
+	"choices": ["break", "do", "while", "for"]
+}, {
+	"question": "If you have a cat object and it has a method of meow() how would I call it?",
+	"choices": ["cat.meow()" ,"meow.cat", "meow().cat", "cat.meow"]
+}, {
+	"question": "If you have a cat object and it has a property of age how would I access it?",
+	"choices": ["cat.age", "age.cat", "age", "cat.age()"]
+}, {
+	"question": "If I had the key of 'full name' how would I access the value of that property on an object?",
+	"choices": ["person['full name'];", "preson.fullName;", "person.'full name';", "person('full name');"]
+}, {
+	"question": "The technique used in JavaScript to share functionality between similar types of objects is known as:",
+	"choices": ["Prototype inheritance", "Classical inheritance", "Objectionable inheritance", "Proto inheritance"]
+}, {
+	"question": "What is NaN (not a number) type?",
+	"choices": ["number", "object", "array", "string"]
+}, {
+	"question": "Which built-in method combines the text of two strings and returns a new string?",
+	"choices": ["concat()", "join()", "indexOf()", "replace()"]
+}]
