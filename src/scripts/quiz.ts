@@ -23,7 +23,7 @@ class Quiz {
     this.correct = 0;
     this.questions = questions;
     this.currentQuestionIndex = 0;
-    this.letters = 'abcdef'.split('');
+    this.letters = 'abcd'.split('');
   }
 
   getCurrentQuestion() {
@@ -52,17 +52,24 @@ class Quiz {
     // 1/20 * 100
     return Math.round((this.correct / this.questions.length) * 100);
   }
+
+  clearQuiz() {
+    this.score = 0;
+    this.correct = 0;
+    this.currentQuestionIndex = 0
+  }
 }
 
 const choicesEl = document.getElementById('answers') as HTMLUListElement;
 const choicesItems = choicesEl.getElementsByTagName('li')! as HTMLCollectionOf<HTMLLIElement>;
 const checkButton = document.getElementById('submit')!;
 const nextButton = document.getElementById('next')!;
+const startEl = document.getElementById('start');
+const quizEl = document.getElementById('quiz');
+const gameOverElement = document.querySelector('.game-over');
 
 const startQuiz = () => {
   const startButton = document.getElementById('start-quiz');
-  const startEl = document.getElementById('start');
-  const quizEl = document.getElementById('quiz');
 
   startButton?.addEventListener('click', () => {
     startEl?.classList.add('hide');
@@ -102,6 +109,7 @@ const displayQuestionNumber = () => {
 const displayQuestion = () => {
   const questionContent = quiz.getCurrentQuestion().question;
   const questionEl = document.getElementById('question')!;
+
   questionEl.textContent = questionContent;
 };
 
@@ -174,18 +182,37 @@ const nextQuestion = () => {
 };
 
 const gameOver = () => {
-  const gameOver = `
-    <li>
-      <div>Game over</div>
-      <p class="result">Result: ${quiz.getCorrectPercent()}%</p>
-      <a class="start-again" href="/">Try again</a>
-    </li>
-  `;
-  document.getElementsByClassName('content')[0].classList.add('game-over');
-  choicesEl.innerHTML = gameOver;
+  const overElement = document.createElement('div');
+  const resultElement = document.createElement('p');
+  const startAgainElement = document.createElement('button');
+
+  gameOverElement?.classList.remove('hide');
+
+  overElement.textContent = 'Game over';
+  resultElement.textContent = `Result: ${quiz.getCorrectPercent()}%`;
+  resultElement.classList.add('result');
+  startAgainElement.textContent = 'Try again';
+  startAgainElement.classList.add('start-again', 'button-area');
+
+  quizEl?.classList.add('hide');
+
+  startAgainElement?.addEventListener('click', startAgain);
+
+  gameOverElement?.append(overElement);
+  gameOverElement?.append(resultElement);
+  gameOverElement?.append(startAgainElement);
 };
 
-const initQuiz = (quizData: TQuizData[]) => {
+function startAgain() {
+  if (gameOverElement) {
+    gameOverElement.innerHTML = '';
+  }
+  startEl?.classList.remove('hide');
+  gameOverElement?.classList.add('hide');
+  quiz.clearQuiz();
+}
+
+function initQuiz(quizData: TQuizData[]) {
   const shuffleQuestions = quizData.map(({ question, choices}: TQuizData) => ({
       question,
       choices: shuffle(choices),

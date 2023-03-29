@@ -48,7 +48,7 @@
 	"choices": ["JavaScript Object Notation", "JavaScript Objective Notation", "JavaScript Objects Notions", "JavaScript Syntax Object Notation"]
 }, {
 	"question": "The indexOf( ) method can search an array to see if there is a matching item in the array. For example, students.indexOf('Kari') looks to see if the string 'Kari' is an item in the students array. What value does the JavaScript interpreter return if it CAN'T find a matching item in the array?",
-	"choices": ["-1", "null", "undefined", "'Not found'", "0"]
+	"choices": ["-1", "null", "undefined", "0"]
 }, {
 	"question": "Which of the following JavaScript keywords is NOT used to create a loop?",
 	"choices": ["break", "do", "while", "for"]
