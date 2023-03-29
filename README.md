@@ -30,6 +30,6 @@ yarn preview
 
 [Quiz 2016](https://balmor.github.io/quiz_2016/)
 
-## Podgląd
+## Preview
 
 [<img src="public/preview.png" width="500"/>](/public/preview.png)
